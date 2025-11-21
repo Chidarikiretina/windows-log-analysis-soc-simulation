@@ -58,20 +58,31 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625,4688,4672} | Export-
 ### 🔐 Failed Logon Attempt
 • 	Event ID: 4625
 • 	MITRE ATT&CK: T1110 (Brute Force)
-• ![Event 4625 Screenshot](images/event-4625.png)  
-• 📸 Event 4625 – Failed Logon  
-• Shows a failed login attempt. Sensitive details have been blurred.
+•   ![Event 4625 – Failed Logon](images/event-4625.png)
+•   📸 **Event 4625 – Failed Logon**  
+•   Shows a failed login attempt. Useful for detecting brute-force or unauthorized access attemp.
+•   Sensitive fields have been redacted for privacy. Screenshots are safe for public sharing.
+
+
+### 🛡️ Privileged Logon
+• 	Event ID: 4672
+• 	Account: SYSTEM
+• 	MITRE ATT&CK: T1078 (Valid Accounts)
+•   ![Event 4672 – Special Logon](images/event-4672.png)
+•   🔐 **Event 4672 – Special Logon**  
+•   Indicates privileged account activity. Often linked to admin-level access or service accounts.
+•   Sensitive fields have been redacted for privacy. Screenshots are safe for public sharing.
 
 
 ### 🧨 Suspicious PowerShell Execution
 • 	Event ID: 4688
 • 	Process: powershell.exe
 • 	MITRE ATT&CK: T1059.001 (PowerShell)
+•   ![Event 4688 – Process Creation](images/event-4688.png)
+•   ⚙️ **Event 4688 – Process Creation**  
+•   Tracks command execution. Useful for identifying suspicious PowerShell or script activity.
+•   Sensitive fields have been redacted for privacy. Screenshots are safe for public sharing.
 
-### 🛡️ Privileged Logon
-• 	Event ID: 4672
-• 	Account: SYSTEM
-• 	MITRE ATT&CK: T1078 (Valid Accounts)
 
 ### 📁 Artifacts
 • 	 — exported logs
@@ -91,8 +102,6 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625,4688,4672} | Export-
 Chidarikire T.
 Cybersecurity Graduate | Threat analyst in training
 
-
-4625 Simulated failed logon event (Event ID 4625) captured during SOC workflow testing. All data shown is from a controlled lab environment.
 
 
 
