@@ -19,9 +19,9 @@ Simulated suspicious activity on a Windows 11 Home system to generate audit logs
 | Event ID | Description                      |  MITRE Technique         |
 |----------|----------------------------------|--------------------------|
 | 4625     | Failed logon attempt             | T1110 (Brute Force)      |
-| 4688     | Process creation (PowerShell)    | T1059.001 (PowerShell)   |
 | 4672     | Privileged logon (SYSTEM)        | T1078 (Valid Accounts)   |
-| 4104     | PowerShell script block logging  | T1059 (Script Execution) |
+| 4688     | Process creation (PowerShell)    | T1059.001 (PowerShell)   |
+
 
 ---
 
